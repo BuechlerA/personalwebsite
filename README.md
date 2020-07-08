@@ -1,2 +1,2 @@
 # personalwebsite
-[alexanderbuechler.xyz](alexanderbuechler.xyz)
+[alexanderbuechler.xyz](https://www.alexanderbuechler.xyz/)
