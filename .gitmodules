@@ -4,3 +4,6 @@
 [submodule "themes/hellofriendng"]
 	path = themes/hellofriendng
 	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng
+[submodule "themes/hugo-theme-hello-friend"]
+	path = themes/hugo-theme-hello-friend
+	url = https://github.com/BuechlerA/hugo-theme-hello-friend.git
