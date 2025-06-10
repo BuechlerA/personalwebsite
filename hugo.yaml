@@ -1,4 +1,4 @@
-baseURL: "https://musing-raman-cd60f4.netlify.app/"
+baseURL: "/"
 languageCode: "en-us"
 title: "personal website"
 theme: hugo-profile
