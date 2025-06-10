@@ -135,7 +135,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Alexander."
-    subtitle: "I build things for the people"
+    subtitle: "I build things for people"
     content: "A passionate softare developer. I tend to make use of modern technologies to build things that look great, feel fantastic, and function correctly."
     image: /images/image.jpg
     bottomImage:
