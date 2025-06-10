@@ -1,4 +1,4 @@
-baseURL: "/"
+baseURL: "https://alexanderbuechler.xyz/"
 languageCode: "en-us"
 title: "personal website"
 theme: hugo-profile
