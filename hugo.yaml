@@ -1,0 +1,332 @@
+baseURL: "https://musing-raman-cd60f4.netlify.app/"
+languageCode: "en-us"
+title: "personal website"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "My Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    defaultTheme: "dark" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Alexander Büchler" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Alexander."
+    subtitle: "I build things for the people"
+    content: "A passionate softare developer. I tend to make use of modern technologies to build things that look great, feel fantastic, and function correctly."
+    image: /images/image.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/BuechlerA
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/alexander-büchler-07b127183
+        - icon: fab fa-itch-io
+          url: https://alexanderbuechler.itch.io
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/image.jpg"
+    content: |-
+      I'm a software engineer with professional experience in Java and Spring. I enjoy building things from the front end all the way to the backend, and I care about making technology approachable and enjoyable to use.
+
+      Right now, I'm working on releasing a modern Go/Weiqi app that focuses on great usability—something I feel is missing from the current options out there. For this project, I'm using Xcode, Swift, SwiftUI, and Supabase.
+
+      I also love experimenting with reinforcement learning, especially training agents in virtual environments like video games. Exploring the intersection of technology, learning, and play is something that excites me every day.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Java / Spring Boot"
+        - "Swift / SwiftUI"
+        - "Supabase"
+        - "Python / RL / Pytorch"
+        - "PHP / Symfony"
+        - "Deno"
+
+  # Experience
+  experience:
+    enable: true
+    items:
+      - job: "Full-Stack Developer"
+        company: "NTT DATA"
+        companyUrl: "https://www.nttdata.com/global/en/"
+        date: "2021 - 2025"
+        location: "Munich, Cologne, Wolfsburg"
+        content: |-
+          Successfully implemented and integrated IT solutions for major clients in the telecommunications and automotive sectors, specializing in agile full-stack software development and quality assurance.
+
+          - Developed and maintained full-stack applications (Vue.js, TypeScript, Java, Spring Boot, PostgreSQL)
+          - Led agile feature implementation in SCRUM, directly incorporating user feedback
+          - Built and optimized REST APIs (OpenAPI, MuleSoft Anypoint Platform) for customer data and CRM integration
+          - Migrated and modernized backend systems (Ant to Maven, Java 8 to 11, SVN to Git, CI/CD pipelines)
+          - Ensured quality assurance for CRM, billing, and sub-ledger systems, including systematic error analysis and end-to-end testing
+          - Collaborated closely with customers and specialist departments to enhance usability, efficiency, and maintainability of platforms
+
+      - job: "Internship: Gameplay Programmer"
+        company: "Mad Hat Assembly UG"
+        date: "04/2018 - 10/2018"
+        location: "Berlin"
+        content: |-
+          Developed and integrated new gameplay mechanics and user interfaces for engaging experiences using Unity and Android SDK.
+
+          - Designed and programmed user-friendly interfaces (UI/UX)
+          - Managed publishing and maintenance in Google Play Store
+          - Conducted comprehensive tests and debugging
+
+      - job: "Working Student: Quality Assurance"
+        company: "GASCADE Gastransport"
+        date: "07/2015 - 07/2017"
+        location: "Mallnow"
+        content: |-
+          Updated hazardous substance documentation to new ISO standards and created automated workflow forms in Excel using Visual Basic.
+
+  # Education
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "Bachelor of Science in Game Design"
+        school:
+          name: "Mediadesign Hochschule für Design und Informatik"
+          url: "https://www.mediadesign.de/"
+        date: "2015 - 2019"
+        location: "Berlin"
+        content: |-
+          Emphasis on programming and computer science.
+          - Practical training in game development focusing on C# and C++ in Unity
+          - Development of gameplay mechanics and system-level programming
+          - Regular collaboration in interdisciplinary teams to develop innovative concepts
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievement.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievement.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievement.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    items:
+      - title: "Fuseki Forge Go"
+        content: |
+          A modern Go/Weiqi app focused on usability and a clean, intuitive experience—unlike most existing options on the market. Built from the ground up for both beginners and enthusiasts, Fuseki Forge Go aims to make learning and playing Go accessible and enjoyable.
+
+          - Built with Swift, SwiftUI, and Supabase
+          - Features a sleek, user-friendly interface
+          - Designed for mobile devices with a focus on modern UX
+          - Includes tools for learning, reviewing, and playing Go
+        image: /images/go-icon.png
+        badges:
+          - "Swift"
+          - "SwiftUI"
+          - "Supabase"
+        # links:
+        #   - icon: fab fa-github
+        #     url: https://github.com/BuechlerA
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:buechlera25@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/BuechlerA
+      linkedin: https://www.linkedin.com/in/alexander-büchler-07b127183
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
